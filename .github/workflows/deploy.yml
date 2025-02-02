@@ -22,11 +22,15 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+      - name: Yarn install
+        uses: borales/actions-yarn@3766bb1335b98fb13c60eaf358fe20811b730a88
+        with:
+          cmd: install
 
       - name: Build project
-        run: npm run build
+        uses: borales/actions-yarn@3766bb1335b98fb13c60eaf358fe20811b730a88
+        with:
+          cmd: build
 
       - name: Upload static files as artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
