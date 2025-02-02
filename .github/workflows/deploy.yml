@@ -21,16 +21,17 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a
-
-      - name: Yarn install
-        uses: borales/actions-yarn@3766bb1335b98fb13c60eaf358fe20811b730a88
         with:
-          cmd: install
+          cache: npm
 
-      - name: Build project
-        uses: borales/actions-yarn@3766bb1335b98fb13c60eaf358fe20811b730a88
-        with:
-          cmd: build
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Setup Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b
+
+      - name: Build with Vite
+        run: npm run build -- --base "${{ steps.pages.outputs.base_path }}"
 
       - name: Upload static files as artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
