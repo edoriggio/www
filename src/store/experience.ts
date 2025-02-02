@@ -71,25 +71,42 @@ export const useEducationStore = defineStore('experience', {
                 end: -1,
             }
         ] as Experience[],
-        publications: [
+        conferences: [
             {
-                institution: "Conversation Disentanglement As-a-Service",
+                institution: "[C1] Conversation Disentanglement As-a-Service",
                 type: "E. Riggio, M. Raglianti and M. Lanza, 2023 IEEE/ACM 31st International Conference on Program " +
                     "Comprehension (ICPC), Melbourne, Australia",
                 start: new Date("05/15/2023"),
                 link: "https://ieeexplore.ieee.org/document/10173991"
             }
         ] as Experience[],
+        theses: [
+            {
+                institution: "[T1] CODI: A Conversation Disentanglement Microservice",
+                type: "Bachelor Thesis",
+                start: new Date("07/01/2022"),
+                link: "src/assets/pdfs/rigg2022a.pdf"
+            },
+            {
+                institution: "[T2] APIScout: An Information Retrieval System for OpenAPI Specifications",
+                type: "Master Thesis",
+                start: new Date("06/01/2024"),
+                link: "src/assets/pdfs/rigg2024a.pdf"
+            }
+        ]
     }),
     getters: {
         getSortedEducation(): Experience[] {
-            return this.education.sort((a, b) => b.start.getFullYear() - a.start.getFullYear());
+            return this.education.sort((a, b) => b.start.getFullYear() - a.start.getFullYear())
         },
         getSortedWork(): Experience[] {
-            return this.work.sort((a, b) => b.start.getFullYear() - a.start.getFullYear());
+            return this.work.sort((a, b) => b.start.getFullYear() - a.start.getFullYear())
         },
-        getSortedPublications(): Experience[] {
-            return this.publications.sort((a, b) => a.start.getFullYear() - b.start.getFullYear());
+        getSortedPublications(): Object {
+            return {
+                "conferences": this.conferences.sort((a, b) => b.start.getFullYear() - a.start.getFullYear()),
+                "theses": this.theses.sort((a, b) => b.start.getFullYear() - a.start.getFullYear())
+            }
         }
     }
 })

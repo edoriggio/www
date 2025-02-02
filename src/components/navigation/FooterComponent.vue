@@ -1,8 +1,9 @@
 <template>
   <div class="flex flex-col items-center bg-[#1E1E1F] border-[1px] border-[#383838] mx-[10px] rounded-2xl py-[20px] px-[20px] gap-6 mb-[85px] md:mb-[45px] md:w-[80%] lg:hidden">
-    <div class="flex flex-wrap items-start gap-10">
+    <div class="flex flex-wrap items-center justify-center gap-10">
       <social-component icon="ri-mail-line" title="EMAIL" content="riggie@usi.ch" />
-      <social-component icon="ri-map-pin-2-line" title="LOCATION" content="Lugano, CH" />
+      <social-component icon="ri-map-pin-2-line" title="LOCATION" :content="'Via la Santa 1\nLugano, CH'" />
+      <social-component icon="ri-building-line" title="OFFICE" content="D3.13" />
     </div>
 
     <separator class="w-[90%] bg-[#383838]" />

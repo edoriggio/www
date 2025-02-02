@@ -13,7 +13,8 @@
 
     <div class="hidden lg:flex lg:flex-col lg:items-start lg:gap-6">
       <social-component icon="ri-mail-line" title="EMAIL" content="riggie@usi.ch" />
-      <social-component icon="ri-map-pin-2-line" title="LOCATION" content="Lugano, CH" />
+      <social-component icon="ri-map-pin-2-line" title="LOCATION" :content="'Via la Santa 1\nLugano, CH'" />
+      <social-component icon="ri-building-line" title="OFFICE" content="D3.13" />
     </div>
 
     <div class="hidden lg:flex lg:justify-center lg:gap-3 lg:w-[90%] lg:text-[20px]">

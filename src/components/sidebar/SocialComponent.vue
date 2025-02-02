@@ -6,7 +6,7 @@
 
     <div class="font-normal text-[14px]">
       <p class="text-[#9D9D9D]">{{ title }}</p>
-      <p>{{ content }}</p>
+      <p style="white-space: preserve-breaks;">{{ content }}</p>
     </div>
   </div>
 </template>

@@ -32,9 +32,7 @@
             </a>
             <p class="font-normal text-[#D6D6D6] text-[14px]">{{ exp.type }}</p>
             <p class="font-thin italic text-[13px]">
-              <span v-if="exp.end">{{ exp.start.toLocaleDateString('default', {month: "short", year: "numeric"}) }}</span>
-              <span v-else>{{ exp.start.getFullYear() }}</span>
-
+              <span>{{ exp.start.toLocaleDateString('default', {month: "short", year: "numeric"}) }}</span>
               <span v-if="exp.end">
                 - {{ typeof exp.end === 'number' ? 'Present' : exp.end.toLocaleDateString('default', {month: "short", year: "numeric"}) }}
               </span>

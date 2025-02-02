@@ -2,32 +2,50 @@
   <div class="flex flex-col bg-[#1E1E1F] border-[1px] border-[#383838] mx-[10px] rounded-2xl py-[20px] px-[20px] gap-8 md:w-[80%] lg:px-[30px] lg:py-[20px] lg:sticky lg:top-[40px]">
     <navigation-component page="projects" />
 
-    <div class="flex gap-9 bg-[#2B2B2C] rounded-2xl px-[20px] py-[18px]">
-      <div class="flex flex-col text-[14px] gap-2 text-[#9D9D9D]">
-        <p v-if="project.language">Language</p>
-        <p>Project Type</p>
-        <p>Year</p>
-        <p v-if="project.github">Repository</p>
-        <p v-if="project.link">Link</p>
-        <p v-if="project.doi">DOI</p>
+    <div class="box-top flex flex-col gap-1.5 bg-[#2B2B2C] rounded-2xl px-[20px] py-[18px]">
+      <div class="text-[14px] w-full flex">
+        <div class="flex-none w-[110px] self-stretch text-[#9D9D9D]"><p v-if="project.language">Language</p></div>
+        <div><p v-if="project.language">{{ project.language }}</p></div>
       </div>
 
-      <div class="flex flex-col text-[14px] gap-2">
-        <p v-if="project.language">{{ project.language }}</p>
-        <p>{{ project.category }}</p>
-        <p>{{ project.date.getFullYear() }}</p>
-        <a :href="project.github" target="_blank" v-if="project.github" class="no-underline hover:underline">
-          {{ project.github.substring(19) }}
-          <i class="ri-external-link-line ml-1 text-[15px]"></i>
-        </a>
-        <a :href="project.link" target="_blank" v-if="project.link" class="no-underline hover:underline">
-          {{ project.link.substring(8) }}
-          <i class="ri-external-link-line ml-1 text-[15px]"></i>
-        </a>
-        <a :href="project.doi" target="_blank" v-if="project.doi" class="no-underline hover:underline">
-          {{ project.doi.substring(16) }}
-          <i class="ri-external-link-line ml-1 text-[15px]"></i>
-        </a>
+      <div class="text-[14px] w-full flex">
+        <div class="flex-none w-[110px] self-stretch text-[#9D9D9D]"><p>Type</p></div>
+        <div class="break-all"><p>{{ project.category }}</p></div>
+      </div>
+
+      <div class="text-[14px] w-full flex">
+        <div class="flex-none w-[110px] self-stretch text-[#9D9D9D]"><p>Year</p></div>
+        <div class="break-all"><p>{{ project.date.getFullYear() }}</p></div>
+      </div>
+
+      <div class="text-[14px] w-full flex">
+        <div class="flex-none w-[110px] self-stretch text-[#9D9D9D]"><p v-if="project.github">Repository</p></div>
+        <div class="break-all">
+          <a :href="project.github" target="_blank" v-if="project.github" class="no-underline hover:underline">
+            {{ project.github.substring(19) }}
+            <i class="ri-external-link-line ml-1 text-[15px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-[14px] w-full flex">
+        <div class="flex-none w-[110px] self-stretch text-[#9D9D9D]"><p v-if="project.link">Link</p></div>
+        <div class="break-all">
+          <a :href="project.link" target="_blank" v-if="project.link" class="no-underline hover:underline">
+            {{ project.link.substring(8) }}
+            <i class="ri-external-link-line ml-1 text-[15px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-[14px] w-full flex">
+        <div class="flex-none w-[110px] self-stretch text-[#9D9D9D]"><p v-if="project.doi">DOI</p></div>
+        <div class="break-all">
+          <a :href="project.doi" target="_blank" v-if="project.doi" class="no-underline hover:underline">
+            {{ project.doi.substring(16) }}
+            <i class="ri-external-link-line ml-1 text-[15px]"></i>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -80,6 +98,7 @@ export default {
     }
   },
   mounted() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
     this.related = this.getProjectsByCategory()(this.project.category).filter(project => project.name != this.project.name)
   },
   watch: {
@@ -96,5 +115,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.wrap {
+  word-break: break-word;
+}
+</style>
 
 <!-- hihihuhuhahahoho -->

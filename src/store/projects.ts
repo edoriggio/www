@@ -203,6 +203,80 @@ export const useProjectsStore = defineStore("projects", {
                 github: undefined,
                 link: undefined,
                 doi: undefined,
+            },
+            {
+                name: "IoT Solar Station",
+                description: "The IoT Solar Station is an advanced weather station with an integrated " +
+                    "self-positioning solar panel. The orthogonal 2-axis servo motors move the solar panel, while " +
+                    "the attached voltmeter constantly measures the current power production. The solar panel moves " +
+                    "at different angles and searches for the best one based on the voltmeter measurements. The " +
+                    "onboard sensors send the collected data to a private MQTT broker, which forwards the data to a " +
+                    "Python backend. The backend ingests the data into a DigitalOcean cloud instance hosting an " +
+                    "ElasticSearch database via Docker containers. Finally, a Kibana dashboard deployed alongside " +
+                    "the database showcases the collected data in nice, compact visualizations.",
+                image: "solar-station",
+                category: "Script",
+                language: "Arduino",
+                date: new Date("12/01/2023"),
+                github: "https://github.com/edoriggio/iot-solar-station",
+                link: undefined,
+                doi: undefined,
+            },
+            {
+                name: "#FormulaUSI 2022",
+                description: "My team – composed of Claudio Milanesi, Luca de Felice, Matteo Martinoli, and I – " +
+                    "participated in the second edition of #FormulaUSI, an event organised by the Software Institute " +
+                    "at Università della Svizzera Italiana. The goal of this event was to develop a Machine Learning " +
+                    "model for a miniature self-driving race car during the course of three days. With the car and " +
+                    "our trained models we managed to win all of the prizes – i.e. best lap time, best average time, " +
+                    "and 1st place in the head-to-head tournament.",
+                image: "formula-usi",
+                category: "Hackathon",
+                language: "Python",
+                date: new Date("11/01/2022"),
+                github: undefined,
+                link: "https://usi.ch/en/feeds/23569",
+                doi: undefined,
+            },
+            {
+                name: "HackZürich 2023",
+                description: "Traffic jams are not only leading to frustration, but also negatively impacting the " +
+                    "environment. This mobile app provides a traffic forecast featuring a state-of-the-art machine " +
+                    "learning model. This will hopefully make travelling the roads of the future faster, cheaper, " +
+                    "safer and more ecological. By loading transformed historical data from >800 sensors across " +
+                    "Switzerland, the service tries to predict the next traffic flux states for each sensor. We also " +
+                    "built a service (frontend + backend) to ease the access and visualisation of data.",
+                image: "hack-zurich",
+                category: "Hackathon",
+                language: "VueNative",
+                date: new Date("09/01/2023"),
+                github: "https://github.com/Traffic-Skipper",
+                link: "https://devpost.com/software/traffic-skipper",
+                doi: undefined,
+            },
+            {
+                name: "#CodeVsCovid19",
+                description: "In a time as delicate as the one we are living in right now, being able to have the " +
+                    "correct information is of crucial importance. This is why I decided to create this project. I " +
+                    "wanted to bring data and information directly to the user in a visually pleasing and compact " +
+                    "form, without making them search the whole internet just to find some extremely fragmented and " +
+                    "difficult to read data. Users can subscribe to the newsletter through a webpage. Here they are " +
+                    "requested to input their email address and by clicking on the following field, an overlay " +
+                    "appears prompting them to choose from a list of over 200 countries, of which they would like to " +
+                    "receive data and news. The countries selected can be more than one, and there is also the " +
+                    "possibility to choose the option 'World' – so that the user can receive data and news about " +
+                    "COVID-19 from all around the world. Once the user has completed the signup process, his job is " +
+                    "done. Every day, at around 6pm, an email will be sent automatically to his inbox. The email " +
+                    "will contain data regarding the spread of COVID-19 in the selected countries with the aid of " +
+                    "graphs, and links to the most recent news articles. The total duration of this competition was " +
+                    " 72 hours.",
+                image: "code-vs-covid",
+                category: "Hackathon",
+                language: "Javascript",
+                date: new Date("04/01/2020"),
+                github: "https://github.com/edoriggio/covid19-daily-newsletter",
+                link: "https://devpost.com/software/covid-19_daily_newsletter",
+                doi: undefined,
             }
         ] as Project[],
     }),
