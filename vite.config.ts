@@ -6,6 +6,7 @@ import {fileURLToPath} from "node:url";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/www/',
   css: {
     postcss: {
       plugins: [tailwind(), autoprefixer()]

@@ -1,0 +1,19 @@
+name: Build Vue
+
+on: [push]
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    name: Build Vue
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - id: build-vue
+        uses: xRealNeon/VuePagesAction@803b88b34a8c4177efad63425155f35419e3a9c6
+        with:
+          username: 'edoriggio'
+          reponame: 'www'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          gitemail: 'edo.riggio19@gmail.com'
+          gitname: 'edoriggio'
+          cname: 'edoriggio.com'
