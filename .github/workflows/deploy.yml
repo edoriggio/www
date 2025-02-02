@@ -17,3 +17,4 @@ jobs:
           gitemail: 'edo.riggio19@gmail.com'
           gitname: 'edoriggio'
           cname: 'edoriggio.com'
+          useyarn: 'true'
