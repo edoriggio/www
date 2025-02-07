@@ -15,6 +15,7 @@
         <div class="flex gap-5">
             <span class="flex flex-col items-center">
               <i class="ri-progress-8-line text-[15px]"></i>
+              <span class="w-[90%] bg-[#383838] border-[1px] h-[1px]"> </span>
               <separator
                   class="bg-[#383838] mt-[-1.6px]"
                   :class="ind === experience.length-1 ? 'hidden' : ''"
@@ -47,8 +48,8 @@
 
 <script lang="ts">
 import type {PropType} from "vue";
-import type {Experience} from "@/store/experience.js";
-import {Separator} from "@/components/ui/separator";
+import type {Experience} from "../store/experience.js";
+import {Separator} from "../components/ui/separator";
 
 export default {
   name: 'TimelineComponent',

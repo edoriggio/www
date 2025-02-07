@@ -1,15 +1,16 @@
 {
-  "name": "www",
-  "version": "1.0.0",
+  "name": "test",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "pinia": "^2.3.0",
+    "pinia": "^2.3.1",
     "radix-vue": "^1.9.11",
     "remixicon": "^4.6.0",
     "tailwind-merge": "^2.6.0",
@@ -25,7 +26,8 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.4.5",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
     "vue-tsc": "^2.2.0"
   }
 }
