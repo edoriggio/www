@@ -85,13 +85,13 @@ export const useEducationStore = defineStore('experience', {
                 institution: "[T1] CODI: A Conversation Disentanglement Microservice",
                 type: "Bachelor Thesis",
                 start: new Date("07/01/2022"),
-                link: "src/assets/pdfs/rigg2022a.pdf"
+                link: "/assets/rigg2022a.pdf"
             },
             {
                 institution: "[T2] APIScout: An Information Retrieval System for OpenAPI Specifications",
                 type: "Master Thesis",
                 start: new Date("06/01/2024"),
-                link: "src/assets/pdfs/rigg2024a.pdf"
+                link: "/assets/rigg2024a.pdf"
             }
         ]
     }),
