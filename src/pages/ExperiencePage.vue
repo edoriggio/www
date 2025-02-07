@@ -8,10 +8,10 @@
 </template>
 
 <script lang="ts">
-import NavigationComponent from "@/components/navigation/NavigationComponent.vue";
+import NavigationComponent from "../components/navigation/NavigationComponent.vue";
 import {mapState} from "pinia";
-import {type Experience, useEducationStore} from "@/store/experience.js";
-import ExpTimelineComponent from "@/components/TimelineComponent.vue";
+import {type Experience, useEducationStore} from "../store/experience.js";
+import ExpTimelineComponent from "../components/TimelineComponent.vue";
 
 export default {
   name: 'ExperiencePage',

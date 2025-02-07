@@ -5,7 +5,6 @@
     <div class="flex flex-wrap gap-4 mb-[-10px]">
       <button
           v-for="category in categories"
-          :key="categories"
           :id="category.toLowerCase().replace(/\s/g, '-')"
           class="categories text-[18px] font-medium menu-button hover:text-[#fff]"
           @click="filterProjects(category)"
@@ -31,8 +30,8 @@
 
 <script lang="ts">
 import {mapState} from "pinia";
-import NavigationComponent from "@/components/navigation/NavigationComponent.vue";
-import {type Project, useProjectsStore} from "@/store/projects.ts";
+import NavigationComponent from "../components/navigation/NavigationComponent.vue";
+import {type Project, useProjectsStore} from "../store/projects.ts";
 
 export default {
   name: 'ProjectsPage',
@@ -44,8 +43,8 @@ export default {
     }
   },
   mounted() {
-    document.getElementById('all').classList.add('text-[#fff]')
-    document.getElementById('all').innerHTML = `All (${this.projects.length})`
+    document.getElementById('all')!.classList.add('text-[#fff]')
+    document.getElementById('all')!.innerHTML = `All (${this.projects.length})`
   },
   methods: {
     getImage(filename: string) {
@@ -61,7 +60,7 @@ export default {
         button.innerHTML = button.innerHTML.replace(/\(.*\)/g, '')
       }
 
-      let el = document.getElementById(categoryClean)
+      let el = document.getElementById(categoryClean)!
 
       el.classList.add('text-[#fff]')
 

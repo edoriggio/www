@@ -7,8 +7,8 @@
 </template>
 
 <script lang="ts">
-import SidebarComponent from "@/components/sidebar/SidebarComponent.vue";
-import FooterComponent from "@/components/navigation/FooterComponent.vue";
+import SidebarComponent from "./components/sidebar/SidebarComponent.vue";
+import FooterComponent from "./components/navigation/FooterComponent.vue";
 
 export default {
   name: 'App',

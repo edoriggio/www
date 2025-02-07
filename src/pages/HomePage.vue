@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import NavigationComponent from "@/components/navigation/NavigationComponent.vue";
+import NavigationComponent from "../components/navigation/NavigationComponent.vue";
 
 export default {
   name: 'HomePage',

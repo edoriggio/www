@@ -83,10 +83,10 @@
 </template>
 
 <script lang="ts">
-import NavigationComponent from "@/components/navigation/NavigationComponent.vue";
+import NavigationComponent from "../components/navigation/NavigationComponent.vue";
 import {mapState} from "pinia";
-import {Project, useProjectsStore} from "@/store/projects";
-import {prototype} from "tailwindcss";
+import {useProjectsStore} from "../store/projects";
+import type {Project} from "../store/projects";
 
 export default {
   name: 'ProjectPage',

@@ -17,8 +17,8 @@
 </template>
 
 <script lang="ts">
-import SocialComponent from "@/components/sidebar/SocialComponent.vue";
-import {Separator} from "@/components/ui/separator";
+import SocialComponent from "../sidebar/SocialComponent.vue";
+import {Separator} from "../ui/separator";
 
 export default {
   name: "FooterComponent",

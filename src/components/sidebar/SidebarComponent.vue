@@ -26,8 +26,8 @@
 </template>
 
 <script lang="ts">
-import {Separator} from "@/components/ui/separator";
-import SocialComponent from "@/components/sidebar/SocialComponent.vue";
+import {Separator} from "../ui/separator";
+import SocialComponent from "../sidebar/SocialComponent.vue";
 
 export default {
   name: 'SidebarComponent',
