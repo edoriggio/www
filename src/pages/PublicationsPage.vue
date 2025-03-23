@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import NavigationComponent from "../components/navigation/NavigationComponent.vue";
-import TimelineComponent from "../components/TimelineComponent.vue";
+import TimelineComponent from "../components/timeline/TimelineComponent.vue";
 import {mapState} from "pinia";
 import {type Experience, useEducationStore} from "../store/experience.ts";
 

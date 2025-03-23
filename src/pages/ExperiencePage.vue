@@ -11,7 +11,7 @@
 import NavigationComponent from "../components/navigation/NavigationComponent.vue";
 import {mapState} from "pinia";
 import {type Experience, useEducationStore} from "../store/experience.js";
-import ExpTimelineComponent from "../components/TimelineComponent.vue";
+import ExpTimelineComponent from "../components/timeline/TimelineComponent.vue";
 
 export default {
   name: 'ExperiencePage',

@@ -47,8 +47,8 @@
 
 <script lang="ts">
 import type {PropType} from "vue";
-import type {Experience} from "../store/experience.js";
-import {Separator} from "../components/ui/separator";
+import type {Experience} from "../../store/experience.ts";
+import {Separator} from "../ui/separator";
 
 export default {
   name: 'TimelineComponent',

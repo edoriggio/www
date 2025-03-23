@@ -13,16 +13,20 @@
       Conversation Disentanglement Microservice" under the supervision of <a
       href="https://www.inf.usi.ch/faculty/lanza/" target="_blank">Prof. Dr. Michele Lanza</a>. In 2024, I obtained
       a Master's degree in Software and Data Engineering (MSDE) at USI, defending my thesis titled "API Scout: An
-      Information Retrieval System for OpenAPI Specifications" under the supervision of Prof. Dr. Cesare Pautasso.
+      Information Retrieval System for OpenAPI Specifications" under the supervision of
+      <a href="https://www.inf.usi.ch/faculty/pautasso/" target="_blank">Prof. Dr. Cesare Pautasso</a>.
     </p>
+
+    <news-timeline/>
   </div>
 </template>
 
 <script lang="ts">
 import NavigationComponent from "../components/navigation/NavigationComponent.vue";
+import NewsTimeline from "../components/timeline/NewsTimeline.vue";
 
 export default {
   name: 'HomePage',
-  components: {NavigationComponent},
+  components: {NewsTimeline, NavigationComponent},
 }
 </script>
