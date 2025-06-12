@@ -34,6 +34,66 @@ export const useEducationStore = defineStore('experience', {
                 end: -1,
             }
         ] as Experience[],
+        teaching: [
+            {
+                institution: "Software Atelier 3",
+                type: "Bachelor's Course (2nd Year)",
+                description: "",
+                start: new Date("09/01/2022"),
+                end: new Date("01/01/2023"),
+            },
+            {
+                institution: "Software Atelier 4",
+                type: "Bachelor's Course (2nd Year)",
+                description: "",
+                start: new Date("02/01/2023"),
+                end: new Date("06/01/2023"),
+            },
+            {
+                institution: "Software Atelier 3",
+                type: "Bachelor's Course (2nd Year)",
+                description: "",
+                start: new Date("09/01/2023"),
+                end: new Date("01/01/2024"),
+            },
+            {
+                institution: "Software Atelier 4",
+                type: "Bachelor's Course (2nd Year)",
+                description: "",
+                start: new Date("02/01/2024"),
+                end: new Date("06/01/2024"),
+            },
+            {
+                institution: "Software Atelier 3",
+                type: "Bachelor's Course (2nd Year)",
+                description: "",
+                start: new Date("09/01/2024"),
+                end: new Date("01/01/2025"),
+            },
+            {
+                institution: "Software Architecture",
+                type: "Master's Course (1st Year)",
+                description: "",
+                start: new Date("02/01/2025"),
+                end: new Date("06/01/2025"),
+            },
+        ] as Experience[],
+        supervision: [
+            {
+                institution: "Github Workflow Analysis VS Code Extension",
+                type: "Eduard Bilous - BSc in Computer Science",
+                description: "",
+                start: new Date("02/01/2025"),
+                end: new Date("06/01/2025"),
+            },
+            {
+                institution: "Large-Scale Analysis of GitHub CI/CD Workflows",
+                type: "Jovy Dinglasan - MSc in Management and Informatics",
+                description: "",
+                start: new Date("02/01/2025"),
+                end: new Date("06/01/2025"),
+            },
+        ] as Experience[],
         work: [
             {
                 institution: "Frontend Developer Intern",
@@ -83,13 +143,13 @@ export const useEducationStore = defineStore('experience', {
         theses: [
             {
                 institution: "[T1] CODI: A Conversation Disentanglement Microservice",
-                type: "Bachelor Thesis",
+                type: "Bachelor's Thesis",
                 start: new Date("07/01/2022"),
                 link: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/rigg2022a.pdf"
             },
             {
                 institution: "[T2] APIScout: An Information Retrieval System for OpenAPI Specifications",
-                type: "Master Thesis",
+                type: "Master's Thesis",
                 start: new Date("06/01/2024"),
                 link: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/rigg2024a.pdf"
             }
@@ -97,15 +157,21 @@ export const useEducationStore = defineStore('experience', {
     }),
     getters: {
         getSortedEducation(): Experience[] {
-            return this.education.sort((a, b) => b.start.getFullYear() - a.start.getFullYear())
+            return this.education.sort((a, b) => b.start.getTime() - a.start.getTime())
+        },
+        getSortedTeaching(): Experience[] {
+            return this.teaching.sort((a, b) => b.start.getTime() - a.start.getTime())
+        },
+        getSortedSupervision(): Experience[] {
+            return this.supervision.sort((a, b) => b.start.getTime() - a.start.getTime())
         },
         getSortedWork(): Experience[] {
-            return this.work.sort((a, b) => b.start.getFullYear() - a.start.getFullYear())
+            return this.work.sort((a, b) => b.start.getTime() - a.start.getTime())
         },
         getSortedPublications(): Object {
             return {
-                "conferences": this.conferences.sort((a, b) => b.start.getFullYear() - a.start.getFullYear()),
-                "theses": this.theses.sort((a, b) => b.start.getFullYear() - a.start.getFullYear())
+                "conferences": this.conferences.sort((a, b) => b.start.getTime() - a.start.getTime()),
+                "theses": this.theses.sort((a, b) => b.start.getTime() - a.start.getTime())
             }
         }
     }

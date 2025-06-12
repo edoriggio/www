@@ -5,7 +5,7 @@
 
       <div class="flex flex-col gap-3 lg:items-center">
         <p class="text-2xl font-medium">Edoardo Riggio</p>
-        <span class="bg-[#2B2B2C] px-[15px] py-[5px] w-fit rounded-[7px] font-normal text-[12px]">PhD Student @ USI</span>
+        <span class="bg-[#2B2B2C] px-[15px] py-[5px] w-fit rounded-[7px] font-normal text-[12px]">PhD Candidate @ USI</span>
       </div>
     </div>
 

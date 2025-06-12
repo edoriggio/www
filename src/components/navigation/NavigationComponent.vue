@@ -2,6 +2,7 @@
   <div class="bottom-0 fixed justify-center left-0 items-center w-full flex flex-row flex-wrap gap-5 navbar py-[20px] lg:relative lg:py-0 lg:w-auto lg:items-start lg:justify-start lg:!border-none lg:!bg-transparent">
     <router-link to="/" class="no-underline"><h1 id="home" class="text-[15px] font-bold menu-button hover:text-[#fff] lg:text-[30px]">About</h1></router-link>
     <router-link to="/experience" class="no-underline"><h1 id="experience" class="text-[15px] font-bold menu-button hover:text-[#fff] lg:text-[30px]">Experience</h1></router-link>
+    <router-link to="/service" class="no-underline"><h1 id="service" class="text-[15px] font-bold menu-button hover:text-[#fff] lg:text-[30px]">Service</h1></router-link>
     <router-link to="/publications" class="no-underline"><h1 id="publications" class="text-[15px] font-bold menu-button hover:text-[#fff] lg:text-[30px]">Publications</h1></router-link>
     <router-link to="/projects" class="no-underline"><h1 id="projects" class="text-[15px] font-bold menu-button hover:text-[#fff] lg:text-[30px]">Projects</h1></router-link>
   </div>
