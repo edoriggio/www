@@ -30,9 +30,12 @@
             >
               {{ exp.institution }} <i v-if="exp.link" class="ri-external-link-line ml-1 text-[15px]"></i>
             </a>
-            <p class="font-normal text-[#D6D6D6] text-[14px]">{{ exp.type }}</p>
+            <p class="font-normal text-[#D6D6D6] text-[14px]" v-html="exp.type"></p>
             <p class="font-thin italic text-[13px]">
-              <span>{{ exp.start.toLocaleDateString('default', {month: "short", year: "numeric"}) }}</span>
+              <span>
+                  {{ new Date() < exp.start ? 'In Press' : exp.start.toLocaleDateString('default', {month: "short", year: "numeric"}) }}
+              </span>
+              
               <span v-if="exp.end">
                 - {{ typeof exp.end === 'number' ? 'Present' : exp.end.toLocaleDateString('default', {month: "short", year: "numeric"}) }}
               </span>
