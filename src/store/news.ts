@@ -9,6 +9,11 @@ export const useNewsStore = defineStore("news", {
   state: () => ({
     news: [
       {
+        date: new Date("08/06/2025"),
+        content:
+          "Our paper titled \"<span class=\"underline\">Pipelines Under Pressure: An Empirical Study of Security Misconfigurations of GitHub Workflows</span>\" has been accepted at PROFES 2025",
+      },
+      {
         date: new Date("07/16/2025"),
         content:
           "Our paper titled \"<span class=\"underline\">Evolution Scatterplot: Exploring Software Change Dynamics in Large-Scale Historical Datasets</span>\" has been accepted at VISSOFT 2025",
