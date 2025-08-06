@@ -154,7 +154,7 @@ export const useEducationStore = defineStore("experience", {
         institution: "[C3] Pipelines Under Pressure: An Empirical Study of Security Misconfigurations of GitHub Workflows",
         type:
           "E. Riggio and C. Pautasso, " + 
-          "26th International Conference on Product-Focused Software Process Improvement (PROFES), " +
+          "2025 26th International Conference on Product-Focused Software Process Improvement (PROFES), " +
           "Salerno, Italy",
         start: new Date("01/01/2026"),
         link: "",
