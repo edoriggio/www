@@ -144,10 +144,19 @@ export const useEducationStore = defineStore("experience", {
       {
         institution: "[C2] Evolution Scatterplot: Exploring Software Change Dynamics in Large-Scale Historical Datasets",
         type:
-          "S. Serbout, D. C. M. Hurtado, H. Atwi, E. Riggio, C. Pautasso, " + 
+          "S. Serbout, D. C. M. Hurtado, H. Atwi, E. Riggio and C. Pautasso, " + 
           "2025 IEEE 13st Working Conference on Software Visualization (VISSOFT), " +
           "Auckland, New Zealand",
         start: new Date("11/01/2025"),
+        link: "",
+      },
+      {
+        institution: "[C3] Pipelines Under Pressure: An Empirical Study of Security Misconfigurations of GitHub Workflows",
+        type:
+          "E. Riggio and C. Pautasso, " + 
+          "26th International Conference on Product-Focused Software Process Improvement (PROFES), " +
+          "Salerno, Italy",
+        start: new Date("01/01/2026"),
         link: "",
       },
     ] as Experience[],
