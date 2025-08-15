@@ -137,7 +137,7 @@ export const useEducationStore = defineStore("experience", {
         type:
           "E. Riggio, M. Raglianti and M. Lanza, " +
           "2023 IEEE/ACM 31st International Conference on Program Comprehension (ICPC), " +
-          " Melbourne, Australia",
+          "IEEE",
         start: new Date("05/15/2023"),
         link: "https://ieeexplore.ieee.org/document/10173991",
       },
@@ -146,7 +146,7 @@ export const useEducationStore = defineStore("experience", {
         type:
           "S. Serbout, D. C. M. Hurtado, H. Atwi, E. Riggio and C. Pautasso, " + 
           "2025 IEEE 13st Working Conference on Software Visualization (VISSOFT), " +
-          "Auckland, New Zealand",
+          "IEEE",
         start: new Date("11/01/2025"),
         link: "",
       },
@@ -155,7 +155,7 @@ export const useEducationStore = defineStore("experience", {
         type:
           "E. Riggio and C. Pautasso, " + 
           "2025 26th International Conference on Product-Focused Software Process Improvement (PROFES), " +
-          "Salerno, Italy",
+          "Springer",
         start: new Date("01/01/2026"),
         link: "",
       },
