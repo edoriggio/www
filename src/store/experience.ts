@@ -7,6 +7,7 @@ export type Experience = {
   start: Date;
   end: Date;
   link: string;
+  award: string;
 };
 
 export const useEducationStore = defineStore("experience", {
@@ -37,45 +38,21 @@ export const useEducationStore = defineStore("experience", {
     teaching: [
       {
         institution: "Software Atelier 3",
-        type: "Bachelor's Course (2nd Year)",
-        description: "",
+        type: "Bachelor in Informatics - 2nd Year",
+        description: "Winter Semesters 2022, 2023, 2024, 2025",
         start: new Date("09/01/2022"),
-        end: new Date("01/01/2023"),
       },
       {
         institution: "Software Atelier 4",
-        type: "Bachelor's Course (2nd Year)",
-        description: "",
+        type: "Bachelor in Informatics - 2nd Year",
+        description: "Spring Semesters 2023, 2024",
         start: new Date("02/01/2023"),
-        end: new Date("06/01/2023"),
-      },
-      {
-        institution: "Software Atelier 3",
-        type: "Bachelor's Course (2nd Year)",
-        description: "",
-        start: new Date("09/01/2023"),
-        end: new Date("01/01/2024"),
-      },
-      {
-        institution: "Software Atelier 4",
-        type: "Bachelor's Course (2nd Year)",
-        description: "",
-        start: new Date("02/01/2024"),
-        end: new Date("06/01/2024"),
-      },
-      {
-        institution: "Software Atelier 3",
-        type: "Bachelor's Course (2nd Year)",
-        description: "",
-        start: new Date("09/01/2024"),
-        end: new Date("01/01/2025"),
       },
       {
         institution: "Software Architecture",
-        type: "Master's Course (1st Year)",
-        description: "",
+        type: "Master in Software and Data Engineering - 1st Year",
+        description: "Spring Semester 2025",
         start: new Date("02/01/2025"),
-        end: new Date("06/01/2025"),
       },
     ] as Experience[],
     supervision: [
@@ -137,25 +114,26 @@ export const useEducationStore = defineStore("experience", {
         type:
           "E. Riggio, M. Raglianti and M. Lanza, " +
           "2023 IEEE/ACM 31st International Conference on Program Comprehension (ICPC), " +
-          "IEEE",
+          "pp. 59-63, IEEE",
         start: new Date("05/15/2023"),
         link: "https://ieeexplore.ieee.org/document/10173991",
       },
       {
-        institution: "[C2] Evolution Scatterplot: Exploring Software Change Dynamics in Large-Scale Historical Datasets",
+        institution: "[C2] EVOSCAT: Exploring Software Change Dynamics in Large-Scale Historical Datasets",
         type:
           "S. Serbout, D. C. M. Hurtado, H. Atwi, E. Riggio and C. Pautasso, " + 
           "2025 IEEE 13st Working Conference on Software Visualization (VISSOFT), " +
-          "IEEE",
+          "in press, IEEE",
         start: new Date("11/01/2025"),
         link: "",
+        award: "Best Tool Paper Award",
       },
       {
         institution: "[C3] Pipelines Under Pressure: An Empirical Study of Security Misconfigurations of GitHub Workflows",
         type:
           "E. Riggio and C. Pautasso, " + 
           "2025 26th International Conference on Product-Focused Software Process Improvement (PROFES), " +
-          "Springer",
+          "in press, Springer",
         start: new Date("01/01/2026"),
         link: "",
       },
@@ -201,7 +179,8 @@ export const useEducationStore = defineStore("experience", {
           institution: el.institution,
           type: el.type.replace("E. Riggio", "<span class=\"underline\">E. Riggio</span>"),
           start: el.start,
-          link: el.link
+          link: el.link,
+          award: el.award,
         } as Experience
       })
       

@@ -30,16 +30,26 @@
             >
               {{ exp.institution }} <i v-if="exp.link" class="ri-external-link-line ml-1 text-[15px]"></i>
             </a>
+            
             <p class="font-normal text-[#D6D6D6] text-[14px]" v-html="exp.type"></p>
-            <p class="font-thin italic text-[13px]">
+            
+            <p v-if="!['Conference Papers', 'Teaching Assistant'].includes(title)" class="font-thin italic text-[13px]">
               <span>
-                  {{ new Date() < exp.start ? 'In Press' : exp.start.toLocaleDateString('default', {month: "short", year: "numeric"}) }}
+                  {{ exp.start.toLocaleDateString('default', {month: "short", year: "numeric"}) }}
               </span>
               
               <span v-if="exp.end">
                 - {{ typeof exp.end === 'number' ? 'Present' : exp.end.toLocaleDateString('default', {month: "short", year: "numeric"}) }}
               </span>
             </p>
+            
+            <p v-else-if="exp.award" class="mt-2 rounded-[7px] p-[2px] pl-[5px] pr-[8px] bg-[#ce6329]">
+                <span>
+                    <i class="ri-award-fill text-[17px]"></i>
+                    <b>&nbsp;{{ exp.award }}</b>
+                </span>
+            </p>
+            
             <p v-if="exp.description" class="font-normal text-[#D6D6D6] text-[14px] mt-2">{{ exp.description }}</p>
           </div>
         </div>

@@ -3,11 +3,12 @@
     <navigation-component page="home"/>
 
     <p class="text-justify text-[#D6D6D6]">
-      I'm a PhD student in Informatics at Università della Svizzera italiana (<a href="https://usi.ch"
+      I'm a PhD candidate in Informatics at Università della Svizzera italiana (<a href="https://usi.ch"
       target="_blank">USI</a>) in Lugano, Switzerland. From August 2024, I am part of the <a
       href="https://design.inf.usi.ch/" target="_blank">DESIGN</a> group – part of the Software Institute (<a
       href="https://si.usi.ch/" target="_blank">SI</a>) – under the supervision of <a
       href="https://www.inf.usi.ch/faculty/pautasso/" target="_blank">Prof. Dr. Cesare Pautasso</a>.
+      My PhD research is focused on assessing and strengthening the software supply chain of DevOps environments.
       <br><br>
       In 2022, I obtained a Bachelor's degree in Computer Science at USI, defending my thesis titled "CODI: A
       Conversation Disentanglement Microservice" under the supervision of <a
