@@ -38,19 +38,19 @@ export const useEducationStore = defineStore("experience", {
     teaching: [
       {
         institution: "Software Atelier 3",
-        type: "Bachelor in Informatics - 2nd Year",
+        type: "BSc in Computer Science - 2nd Year",
         description: "Winter Semesters 2022, 2023, 2024, 2025",
         start: new Date("09/01/2022"),
       },
       {
         institution: "Software Atelier 4",
-        type: "Bachelor in Informatics - 2nd Year",
+        type: "BSc in Computer Science - 2nd Year",
         description: "Spring Semesters 2023, 2024",
         start: new Date("02/01/2023"),
       },
       {
         institution: "Software Architecture",
-        type: "Master in Software and Data Engineering - 1st Year",
+        type: "MSc in Software and Data Engineering - 1st Year",
         description: "Spring Semester 2025",
         start: new Date("02/01/2025"),
       },
