@@ -3,6 +3,7 @@
     <navigation-component page="publications"/>
 
     <timeline-component icon="ri-team-line" title="Conference Papers" v-bind:experience="conferences" />
+    <timeline-component icon="ri-profile-line" title="Posters" v-bind:experience="posters"></timeline-component>
     <timeline-component class="mb-[15px]" icon="ri-graduation-cap-line" title="Theses" v-bind:experience="theses" />
   </div>
 </template>
@@ -19,11 +20,12 @@ export default {
   data() {
     return {
       conferences: this.getSortedPublications()['conferences'] as Experience[],
-      theses: this.getSortedPublications()['theses'] as Experience[]
+      posters: this.getSortedPublications()['posters'] as Experience[],
+      theses: this.getSortedPublications()['theses'] as Experience[],
     }
   },
   methods: {
-    ...mapState(useEducationStore, ['getSortedPublications'])
+    ...mapState(useEducationStore, ['getSortedPublications']),
   }
 }
 </script>

@@ -113,16 +113,16 @@ export const useEducationStore = defineStore("experience", {
         institution: "[C1] Conversation Disentanglement As-a-Service",
         type:
           "E. Riggio, M. Raglianti and M. Lanza, " +
-          "2023 IEEE/ACM 31st International Conference on Program Comprehension (ICPC), " +
+          "2023, IEEE/ACM 31st International Conference on Program Comprehension (ICPC), " +
           "pp. 59-63, IEEE",
         start: new Date("05/15/2023"),
-        link: "https://ieeexplore.ieee.org/document/10173991",
+        link: "https://doi.org/10.1109/ICPC58990.2023.00018",
       },
       {
         institution: "[C2] EVOSCAT: Exploring Software Change Dynamics in Large-Scale Historical Datasets",
         type:
           "S. Serbout, D. C. M. Hurtado, H. Atwi, E. Riggio and C. Pautasso, " + 
-          "2025 IEEE 13st Working Conference on Software Visualization (VISSOFT), " +
+          "2025, IEEE 13st Working Conference on Software Visualization (VISSOFT), " +
           "in press, IEEE",
         start: new Date("11/01/2025"),
         link: "",
@@ -132,11 +132,19 @@ export const useEducationStore = defineStore("experience", {
         institution: "[C3] Pipelines Under Pressure: An Empirical Study of Security Misconfigurations of GitHub Workflows",
         type:
           "E. Riggio and C. Pautasso, " + 
-          "2025 26th International Conference on Product-Focused Software Process Improvement (PROFES), " +
+          "2025, 26th International Conference on Product-Focused Software Process Improvement (PROFES), " +
           "in press, Springer",
         start: new Date("01/01/2026"),
         link: "",
       },
+    ] as Experience[],
+    posters: [
+      {
+        institution: "[P1] EVOSCAT: Exploring Software Change Dynamics in Large-Scale Historical Datasets",
+        type: "2025, IEEE 13st Working Conference on Software Visualization (VISSOFT)",
+        start: new Date("09/07/2025"),
+        link: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/souh2025a.pdf",
+      }
     ] as Experience[],
     theses: [
       {
@@ -189,6 +197,9 @@ export const useEducationStore = defineStore("experience", {
           (a, b) => b.start.getTime() - a.start.getTime(),
         ),
         theses: this.theses.sort(
+          (a, b) => b.start.getTime() - a.start.getTime(),
+        ),
+        posters: this.posters.sort(
           (a, b) => b.start.getTime() - a.start.getTime(),
         ),
       };
