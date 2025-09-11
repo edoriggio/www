@@ -8,6 +8,7 @@ export type Experience = {
   end: Date;
   link: string;
   award: string;
+  preprint: string;
 };
 
 export const useEducationStore = defineStore("experience", {
@@ -117,6 +118,7 @@ export const useEducationStore = defineStore("experience", {
           "pp. 59-63, IEEE",
         start: new Date("05/15/2023"),
         link: "https://doi.org/10.1109/ICPC58990.2023.00018",
+        preprint: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/rigg2023a.pdf",
       },
       {
         institution: "[C2] EVOSCAT: Exploring Software Change Dynamics in Large-Scale Historical Datasets",
@@ -127,6 +129,7 @@ export const useEducationStore = defineStore("experience", {
         start: new Date("11/01/2025"),
         link: "",
         award: "Best Tool Paper Award",
+        preprint: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/souh2025b.pdf",
       },
       {
         institution: "[C3] Pipelines Under Pressure: An Empirical Study of Security Misconfigurations of GitHub Workflows",
@@ -136,6 +139,7 @@ export const useEducationStore = defineStore("experience", {
           "in press, Springer",
         start: new Date("01/01/2026"),
         link: "",
+        preprint: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/rigg2025a.pdf",
       },
     ] as Experience[],
     posters: [
@@ -189,6 +193,7 @@ export const useEducationStore = defineStore("experience", {
           start: el.start,
           link: el.link,
           award: el.award,
+          preprint: el.preprint,
         } as Experience
       })
       
