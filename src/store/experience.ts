@@ -127,7 +127,7 @@ export const useEducationStore = defineStore("experience", {
           "2025, IEEE 13st Working Conference on Software Visualization (VISSOFT), " +
           "in press, IEEE",
         start: new Date("11/01/2025"),
-        link: "",
+        link: "https://doi.org/10.1109/VISSOFT67405.2025.00021",
         award: "Best Tool Paper Award",
         preprint: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/souh2025b.pdf",
       },
