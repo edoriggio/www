@@ -138,7 +138,7 @@ export const useEducationStore = defineStore("experience", {
           "2025, 26th International Conference on Product-Focused Software Process Improvement (PROFES), " +
           "in press, Springer",
         start: new Date("01/01/2026"),
-        link: "",
+        link: "https://doi.org/10.1007/978-3-032-12089-2_14",
         preprint: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/rigg2025a.pdf",
       },
     ] as Experience[],
