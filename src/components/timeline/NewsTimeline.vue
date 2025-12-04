@@ -7,8 +7,8 @@
         <span class="flex-grow-0 flex-shrink-0 basis-[95px] bg-[#2B2B2C] text-center py-[5px] rounded-[7px] font-normal text-[12px] max-[490px]:basis-[28px] max-[490px]:w-[95px]">
           {{ newz.date.toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) }}
         </span>
-
-        <p v-html="newz.content"></p>
+        
+        <p v-html="newz.content" class="text-left"></p>
       </div>
     </div>
   </div>
