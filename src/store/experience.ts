@@ -125,7 +125,7 @@ export const useEducationStore = defineStore("experience", {
         type:
           "S. Serbout, D. C. M. Hurtado, H. Atwi, E. Riggio and C. Pautasso, " + 
           "2025, IEEE 13st Working Conference on Software Visualization (VISSOFT), " +
-          "in press, IEEE",
+          "pp. 94-105, IEEE",
         start: new Date("11/01/2025"),
         link: "https://doi.org/10.1109/VISSOFT67405.2025.00021",
         award: "Best Tool Paper Award",
@@ -136,7 +136,7 @@ export const useEducationStore = defineStore("experience", {
         type:
           "E. Riggio and C. Pautasso, " + 
           "2025, 26th International Conference on Product-Focused Software Process Improvement (PROFES), " +
-          "in press, Springer",
+          "pp. 220–236, Springer",
         start: new Date("01/01/2026"),
         link: "https://doi.org/10.1007/978-3-032-12089-2_14",
         preprint: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/rigg2025a.pdf",
