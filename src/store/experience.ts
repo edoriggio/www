@@ -124,7 +124,7 @@ export const useEducationStore = defineStore("experience", {
         institution: "[C2] EVOSCAT: Exploring Software Change Dynamics in Large-Scale Historical Datasets",
         type:
           "S. Serbout, D. C. M. Hurtado, H. Atwi, E. Riggio and C. Pautasso, " + 
-          "2025, IEEE 13st Working Conference on Software Visualization (VISSOFT), " +
+          "2025, 13st IEEE Working Conference on Software Visualization (VISSOFT), " +
           "pp. 94-105, IEEE",
         start: new Date("11/01/2025"),
         link: "https://doi.org/10.1109/VISSOFT67405.2025.00021",
@@ -140,6 +140,16 @@ export const useEducationStore = defineStore("experience", {
         start: new Date("01/01/2026"),
         link: "https://doi.org/10.1007/978-3-032-12089-2_14",
         preprint: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/rigg2025a.pdf",
+      },
+      {
+        institution: "[C4] Changing Nothing, Yet Changing Everything: Exploring Rug Pulls in GitHub Workflows",
+        type:
+          "E. Riggio and C. Pautasso, " + 
+          "2026, 23rd IEEE International Conference on Software Architecture (ICSA), in press",
+          // "pp. 220–236, Springer",
+        start: new Date("01/02/2026"),
+        link: "",
+        preprint: "",
       },
     ] as Experience[],
     posters: [

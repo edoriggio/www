@@ -10,6 +10,11 @@ export const useNewsStore = defineStore("news", {
   state: () => ({
     news: [
       {
+        date: new Date("02/07/2026"),
+        content:
+          '<i class="ri-file-text-line"></i> Our paper titled "<span class="underline">Changing Nothing, Yet Changing Everything: Exploring Rug Pulls in GitHub Workflows</span>" has been accepted at PROFES 2025',
+      },
+      {
         date: new Date("09/08/2025"),
         content:
           '<i class="ri-award-line"></i> Received the "Best Tool/Poster/Challenge Award" at VISSOFT 2025 for our paper titled "<span class="underline">EVOSCAT: Exploring Software Change Dynamics in Large-Scale Historical Datasets</span>"',
