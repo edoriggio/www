@@ -12,7 +12,7 @@ export const useNewsStore = defineStore("news", {
       {
         date: new Date("02/07/2026"),
         content:
-          '<i class="ri-file-text-line"></i> Our paper titled "<span class="underline">Changing Nothing, Yet Changing Everything: Exploring Rug Pulls in GitHub Workflows</span>" has been accepted at PROFES 2025',
+          '<i class="ri-file-text-line"></i> Our paper titled "<span class="underline">Changing Nothing, Yet Changing Everything: Exploring Rug Pulls in GitHub Workflows</span>" has been accepted at ICSA 2026',
       },
       {
         date: new Date("09/08/2025"),
