@@ -149,7 +149,7 @@ export const useEducationStore = defineStore("experience", {
           // "pp. 220–236, Springer",
         start: new Date("01/02/2026"),
         link: "",
-        preprint: "",
+        preprint: "https://raw.githubusercontent.com/edoriggio/www/main/src/assets/pdfs/rigg2026a.pdf",
       },
     ] as Experience[],
     posters: [
